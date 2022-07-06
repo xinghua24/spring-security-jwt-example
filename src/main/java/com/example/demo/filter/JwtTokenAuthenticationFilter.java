@@ -1,6 +1,6 @@
-package com.example.springsecurityjwtexample.filter;
+package com.example.demo.filter;
 
-import com.example.springsecurityjwtexample.service.JwtUtils;
+import com.example.demo.service.JwtUtils;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.FilterChain;

@@ -1,4 +1,4 @@
-package com.example.springsecurityjwtexample.controller;
+package com.example.demo.controller;
 
 import java.io.Serializable;
 import lombok.AllArgsConstructor;

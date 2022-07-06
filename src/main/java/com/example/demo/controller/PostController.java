@@ -1,6 +1,6 @@
-package com.example.springsecurityjwtexample.controller;
+package com.example.demo.controller;
 
-import com.example.springsecurityjwtexample.entity.Post;
+import com.example.demo.entity.Post;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

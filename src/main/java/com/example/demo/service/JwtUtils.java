@@ -1,4 +1,4 @@
-package com.example.springsecurityjwtexample.service;
+package com.example.demo.service;
 
 import static java.util.stream.Collectors.joining;
 

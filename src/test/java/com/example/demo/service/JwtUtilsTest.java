@@ -1,9 +1,8 @@
-package com.example.springsecurityjwtexample.service;
+package com.example.demo.service;
 
 import io.jsonwebtoken.Claims;
 import java.util.List;
 import org.junit.jupiter.api.Test;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 class JwtUtilsTest {
   private static JwtUtils jwtUtils = new JwtUtils();
