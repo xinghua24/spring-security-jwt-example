@@ -28,12 +28,12 @@ CREATE TABLE IF NOT EXISTS `user` (
 ALTER TABLE `post` ADD CONSTRAINT `fk_post_user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 -- admin/pass
-INSERT INTO user(`username`, `password`, `email`, `name`, `bio`, `enabled`, `roles`, `created`) values
-  ('admin', '$2y$10$CamipIbIY/eLf6VexqsMderLpX57mn1shmB1lkLeJVcp1G1b1IXJa', 'a@gmail.com', 'Alice A', 'I am an admin.', 1, 'ROLE_ADMIN,ROLE_USER', NOW());
+INSERT INTO user(`username`, `password`, `email`, `name`, `enabled`, `roles`, `created`) values
+  ('admin', '$2y$10$CamipIbIY/eLf6VexqsMderLpX57mn1shmB1lkLeJVcp1G1b1IXJa', 'a@gmail.com', 'Alice A', 1, 'ROLE_ADMIN,ROLE_USER', NOW());
 
 -- user/pass
-INSERT INTO user(`username`, `password`, `email`, `name`, `bio`, `enabled`, `roles`, `created`) values
-  ('user', '$2y$10$CamipIbIY/eLf6VexqsMderLpX57mn1shmB1lkLeJVcp1G1b1IXJa', 'b@gmail.com', 'Ben B', 'I am a user.', 1, 'ROLE_USER', NOW());
+INSERT INTO user(`username`, `password`, `email`, `name`, `enabled`, `roles`, `created`) values
+  ('user', '$2y$10$CamipIbIY/eLf6VexqsMderLpX57mn1shmB1lkLeJVcp1G1b1IXJa', 'b@gmail.com', 'Ben B', 1, 'ROLE_USER', NOW());
 
 
 INSERT INTO post(`user_id`, `title`, `content`, `created`, `updated`) values
