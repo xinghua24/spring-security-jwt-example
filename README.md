@@ -1,5 +1,16 @@
 # Spring Security Jwt Example
 
+call /register endpoint to register user
+```shell
+curl --location 'localhost:8080/register' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "testuser",
+    "password": "pass"
+}'
+```
+
+
 call /signin endpoint to get access token
 ```sh
 curl --location 'localhost:8080/signin' \
