@@ -1,6 +1,6 @@
 package com.example.demo.config;
 
-import com.example.demo.filter.JwtTokenAuthenticationFilter;
+import com.example.demo.filter.JwtAuthorizationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -34,7 +34,7 @@ public class SecurityConfig {
   BCryptPasswordEncoder passwordEncoder;
 
   @Autowired
-  JwtTokenAuthenticationFilter jwtTokenAuthenticationFilter;
+  JwtAuthorizationFilter jwtTokenAuthenticationFilter;
 
   @Bean
   SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {

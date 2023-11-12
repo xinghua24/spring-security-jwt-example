@@ -2,7 +2,7 @@
 
 call /register endpoint to register user
 ```shell
-curl --location 'localhost:8080/register' \
+curl -v --location 'localhost:8080/register' \
 --header 'Content-Type: application/json' \
 --data '{
     "username": "testuser",
@@ -13,7 +13,7 @@ curl --location 'localhost:8080/register' \
 
 call /signin endpoint to get access token
 ```sh
-curl --location 'localhost:8080/signin' \
+curl -v --location 'localhost:8080/signin' \
 --header 'Content-Type: application/json' \
 --data '{
     "username": "admin",
@@ -23,6 +23,6 @@ curl --location 'localhost:8080/signin' \
 
 call /admin endpoint. Attach access token as Bearer token
 ```sh
-curl --location 'localhost:8080/api/admin' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlJPTEVfQURNSU4sUk9MRV9VU0VSIiwic3ViIjoiYWRtaW4iLCJpYXQiOjE2OTk3NDk1MDIsImV4cCI6MTY5OTc1MzEwMn0.pLpa77HODLwI6yuf3wDD2yNkrcKt1PlDalvk4GCrwu0%'
+curl -v --location 'localhost:8080/api/admin' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlJPTEVfQURNSU4sUk9MRV9VU0VSIiwic3ViIjoiYWRtaW4iLCJpYXQiOjE2OTk3NTMzODcsImV4cCI6MTY5OTc1Njk4N30.9GatufnIntK5cSPgm6MD3wthJY5u6LL1Bwa67PbasuE'
 ```
